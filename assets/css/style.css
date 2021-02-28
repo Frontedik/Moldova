@@ -59,7 +59,7 @@ h6 {
 }
 
 .img {
-    margin-top: -50px;
+
     width: 100%;
     height: auto;
 }
@@ -149,6 +149,7 @@ h6 {
 
 
 .castle {
+    min-width: 0;
 
     margin: 70px 0 0 0;
     /*    position: absolute;*/
@@ -225,22 +226,78 @@ h6 {
 }
 
 .ssilki {
+
     text-decoration: none;
     color: #fc7806;
     transition: .3s linear;
 
 }
+.castlehid1 {
+    display: none;
+}
+.castlehid2 {
+    display: none;
+}
+.castlehid3 {
+    display: none;
+}
 
+
+/*
 .cont__ssilki:hover {
-    transform: scale(2);
+    transform: scale(1.5);
 
 }
+*/
 
 .ssilki:hover {
     color: #79ff06;
 }
 
+.slider {
+    position: relative;
+    padding: 0px 60px;
+/*    // поля между стрелкой и краем слайдера*/
+}
+.slick-prev.slick-arrow {
+    border-radius: 50%;
+     position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 50%;
+   background-color: rgb(29, 204, 144);
+/*    // выравнивание по вертикали*/
+    margin: -15px 0 0 0;
+/*    // корректировка  вертикального выравнивания*/
+    z-index: 2;
+/*    // стрелки сверху картинок*/
+    font-size: 0;
+/*    // убираем надпись на дефолтной стрелке*/
+    width: 30px;
+/*    // ширина стрелки*/
+    height: 30px;
+/*    // высота стрелки*/
+}
 
+.slick-next.slick-arrow{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+     background-color: rgb(29, 204, 144);
+    right: 0px;
+    top: 50%;
+/*    // выравнивание по вертикали*/
+    margin: -15px 0 0 0;
+/*    // корректировка  вертикального выравнивания*/
+    z-index: 2;
+/*    // стрелки сверху картинок*/
+    font-size: 0;
+/*    // убираем надпись на дефолтной стрелке*/
+    width: 30px;
+/*    // ширина стрелки*/
+    height: 30px;
+/*    // высота стрелки*/
+  }
 
 /*===========Section=============*/
 .otstup {
@@ -495,6 +552,7 @@ h6 {
 }
 
 .footer.fix {
+    height: 20vh;
     position: fixed;
 
     left: 0;
@@ -527,6 +585,7 @@ h6 {
 
 
 .footer__img {
+    width: 100%;
     justify-items: center;
 }
 
@@ -566,12 +625,12 @@ h6 {
         margin: 0;
     }
 
-    .img {
-        margin-top: 185px;
-    }
+   .img {
+    padding-top: 200px;
+}
 
     .meet {
-        margin-top: 250px;
+        padding-top: 280px;
         text-align: center;
 
     }
@@ -605,7 +664,7 @@ h6 {
     .textCastle {
         padding-left: 60px;
         padding-top: 150px;
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .testimonials__block {
@@ -653,7 +712,7 @@ h6 {
 
     .side_right {
         margin: 70px auto;
-        width: 60%;
+        width: 65%;
         height: 900px;
     }
 
@@ -716,6 +775,52 @@ h6 {
 }
 
 /*======================*/
+@media (max-width: 823px) {
+    .conteiner {
+        width: 768px;
+    }
+    .img {
+    padding-top: 25px;
+}
+
+    .nav__link {
+        left: -50px;
+    }
+
+    .link__slide {
+        margin-left: -15px;
+    }
+
+    .cont__ssilki {
+        margin: 0 28px;
+        width: 200px;
+    }
+.sl {
+    max-width: 823px;
+}
+    .side_right {
+        width: 85%;
+    }
+
+    .testimonials {
+        width: 823px;
+    }
+
+    .info__blocks {
+        height: 800px;
+    }
+
+    .footer.fix {
+        width: 823px;
+    }
+
+    .footer__img {
+        width: 823px;
+    }
+}
+
+/*=======================*/
+
 
 @media (max-width: 812px) {
 
@@ -724,7 +829,7 @@ h6 {
     }
 
     .img {
-        padding-top: 75px;
+           padding-top: 45px;
         width: 55%;
     }
 
@@ -734,8 +839,8 @@ h6 {
     }
 
     .sl {
-        max-width: 700px;
-    }
+    max-width: 790px;
+}
 
     .cont__ssilki {
         width: 190px;
@@ -774,9 +879,9 @@ h6 {
         font-size: 25px;
     }
 
-    .footer.fix {
-        width: 768px;
-    }
+   .footer.fix {
+    width: 812px;
+}
 
     .footer__img {
         width: 768px;
@@ -791,12 +896,13 @@ h6 {
 
 @media (max-width: 768px) {
 
+
     .conteiner {
         width: 768px;
     }
 
     .img {
-        padding-top: 250px;
+        padding-top: 150px;
         width: 90%;
     }
 
@@ -810,8 +916,11 @@ h6 {
     }
 
     .cont__ssilki {
-        width: 190px;
-    }
+    width: 155px;
+}
+    .textCastle {
+    font-size: 26px;
+}
 
     .testimonials {
         width: 768px;
@@ -864,7 +973,7 @@ h6 {
     }
 
     .img {
-        padding-top: 60px;
+        padding-top: 20px;
         width: 70%;
     }
 
@@ -891,8 +1000,8 @@ h6 {
     }
 
     .cont__ssilki {
-        width: 170px;
-    }
+    width: 140px;
+}
 
     .testimonials {
         width: 736px;
@@ -961,13 +1070,19 @@ h6 {
     .otstup {
         height: 15px;
     }
+    .link__slide {
+    margin-left: 35px;
+}
 
+    .side_right {
+    width: 100%;
+}
     .textCastle {
-        font-size: 19px;
+        font-size: 27px;
     }
 
     .cont__ssilki {
-        width: 145px;
+        width: 120px;
     }
 
     .sl {
@@ -1014,7 +1129,7 @@ h6 {
     }
 
     .img {
-        padding-top: 80px;
+        padding-top: 100px;
         width: 70%;
     }
 
@@ -1026,7 +1141,9 @@ h6 {
     .otstup {
         height: 15px;
     }
-
+.link__slide {
+    margin-left: 0px;
+}
     .textCastle {
         font-size: 19px;
     }
@@ -1036,11 +1153,17 @@ h6 {
     }
 
     .sl {
-        max-width: 600px;
+        max-width: 655px;
+    }
+
+    .side_right {
+        width: 100%;
     }
 
     .textCastle {
         padding-top: 105px;
+        font-size: 24px;
+
     }
 
     .testimonials {
@@ -1091,15 +1214,21 @@ h6 {
     }
 
     .textCastle {
-        font-size: 19px;
-    }
+    font-size: 25px;
+}
+    .link__slide {
+    margin-left: -15px;
+}
+    .side_right {
+    background-position: center;
+}
 
     .cont__ssilki {
         width: 145px;
     }
 
     .sl {
-        max-width: 580px;
+        max-width: 651px;
     }
 
     .textCastle {
@@ -1148,7 +1277,7 @@ h6 {
 
     .link__slide {
         width: 540px;
-        left: -45px;
+        left: 20px;
         margin-top: -790px;
     }
 
@@ -1157,7 +1286,7 @@ h6 {
     }
 
     .cont__ssilki {
-        width: 120px;
+        width: 85px;
     }
 
     .testimonials {
@@ -1219,6 +1348,11 @@ h6 {
     .footer.fix {
         width: 568px;
     }
+
+    .telmail {
+        padding-left: 70px;
+        padding-top: 140px;
+    }
 }
 
 /*========================*/
@@ -1229,10 +1363,16 @@ h6 {
     .conteiner {
         width: 540px;
     }
+    .nav {
+        font-size: 10px;
+    }
+    .img {
+    padding-top: 110px;
+    }
 
     .link__slide {
         width: 540px;
-        left: -45px;
+        left: -30px;
         margin-top: -790px;
     }
 
@@ -1241,7 +1381,8 @@ h6 {
     }
 
     .cont__ssilki {
-        width: 120px;
+        width: 100px;
+        font-size: 25px;
     }
 
     .meet {
@@ -1277,7 +1418,7 @@ h6 {
 
     .side_right {
         margin: 70px auto;
-        width: 80%;
+        width: 85%;
         height: 660px;
         background-position: center;
     }
@@ -1340,6 +1481,7 @@ h6 {
 
     .nav {
         font-size: 10px;
+        padding-left: 50px;
     }
 
     .nav__link {
@@ -1499,7 +1641,7 @@ h6 {
     }
 
     .footer.fix {
-        width: 375px;
+        width: 411px;
     }
 
 }
@@ -1514,6 +1656,11 @@ h6 {
 
     .conteiner {
         width: 375px;
+    }
+    .img {
+        padding-top: 165px;
+        width: 90%;
+
     }
 
     .link__slide {
@@ -1531,16 +1678,13 @@ h6 {
 
     .nav {
         font-size: 10px;
+        padding-left: 45px;
     }
 
     .nav__link {
         margin: 0 18px;
     }
 
-    .img {
-        padding-top: 267px;
-        width: 90%;
-    }
 
     .meet {
         padding-top: 210px;
@@ -1590,7 +1734,7 @@ h6 {
         display: flex;
         justify-content: space-between;
         width: 320px;
-        margin-left: 50px;
+        margin-left: 25px;
     }
 
     .cont__ssilki {
@@ -1702,6 +1846,9 @@ h6 {
     .conteiner {
         width: 360px;
     }
+    .nav {
+        padding-left: 20px;
+    }
 
     .nav__link {
         left: 15px;
@@ -1709,6 +1856,9 @@ h6 {
 
     .img {
         padding-top: 120px;
+    }
+    .textCastle {
+    font-size: 14px;
     }
 
     .meet {
@@ -1731,6 +1881,9 @@ h6 {
     .conteiner {
         width: 320px;
     }
+    .nav {
+    padding-left: 0px;
+}
 
 
     .footer.fix {
@@ -1751,7 +1904,11 @@ h6 {
     }
 
     .sl {
-        margin-left: -15px;
+        margin-left: 15px;
+    }
+
+    .footer {
+        width: 320px;
     }
 
 
