@@ -97,42 +97,7 @@ $(function () {
             } else {
                 foot.removeClass("fix");
             }
-        } else if (width == 768 || width == 736 || width == 823) {
-            if (scrollPos > 400) {
-                foot.addClass("fix");
-                if (scrollPos > 3555) {
-                    foot.removeClass("fix");
-                }
-            } else {
-                foot.removeClass("fix");
-            }
-        } else if (width == 667 || width == 720 || width == 640) {
-            if (scrollPos > 400) {
-                foot.addClass("fix");
-                if (scrollPos > 3555) {
-                    foot.removeClass("fix");
-                }
-            } else {
-                foot.removeClass("fix");
-            }
-        } else if (width == 568 || width == 540) {
-            if (scrollPos > 100) {
-                foot.addClass("fix");
-                if (scrollPos > 2980) {
-                    foot.removeClass("fix");
-                }
-            } else {
-                foot.removeClass("fix");
-            }
-        } else if (width > 315 || width < 420) {
-            if (scrollPos > 100) {
-                foot.addClass("fix");
-                if (scrollPos > 2980) {
-                    foot.removeClass("fix");
-                }
-            } else {
-                foot.removeClass("fix");
-            }
+
         }
 
 
